@@ -1,0 +1,41 @@
+using System;
+
+namespace project1;
+
+class animal
+{
+    public virtual void sound()
+    {
+        Console.WriteLine("animal");
+    }
+}
+
+class cow : animal
+{
+    public override void sound()
+    {
+        Console.WriteLine("cow");
+    }
+}
+
+class cat : animal
+{
+    public override void sound()
+    {
+        Console.WriteLine("cat");
+    }
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        animal a1= new animal();
+        animal a2 = new cow();
+        animal a3 = new cat();
+        
+        a1.sound();
+        a2.sound();
+        a3.sound();
+    }
+}
