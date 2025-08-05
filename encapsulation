@@ -1,0 +1,25 @@
+//encapsulation
+class program
+{
+    private string NAME;
+
+    public string name
+    {
+        get
+        {
+            return NAME;
+        }
+        set
+        {
+            NAME = value;
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        program p = new program();
+
+        p.name = "asus";
+        Console.WriteLine(p.name);
+    }
+}
