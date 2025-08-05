@@ -1,0 +1,42 @@
+//constrctor
+class car
+{
+    private string name = "bhavik";
+
+    public car()
+    {
+        Console.WriteLine("constrctor");
+    }
+
+    static void Main(string[] args)
+    {
+        car c1 = new car();
+        Console.WriteLine(c1.name);
+    }
+}
+
+
+
+
+//constrctor with argument
+class car
+{
+    string name;
+
+    car(string Fname)
+    {
+        name = Fname;
+        Console.WriteLine("constructor called");
+    }
+
+    static void Main(string[] args)
+    {
+        car c1 = new car("bhavik");
+        Console.WriteLine(c1.name);
+        
+    }
+}
+
+
+
+
