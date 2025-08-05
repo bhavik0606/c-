@@ -1,0 +1,88 @@
+//method
+
+using System;
+
+namespace project1;
+
+ class program
+{
+    
+    static void student(int id,string name)
+    {
+        Console.WriteLine(id+" "+name);
+    }
+    static void Main(String[] args)
+    {
+        student(1,"bhavik");
+    }
+}
+
+
+//default paramerter.
+
+static void country(string cname="india")
+    {
+        Console.WriteLine(cname);
+    }
+    static void Main(String[] args)
+    {
+        country("bhavik");
+        country();
+        country();
+    }
+
+
+
+//return
+static int mymethod(int a, int b)
+    {
+        return a + b;
+    }
+    static void Main(String[] args)
+    {
+        int c = mymethod(4, 5);
+        Console.WriteLine(c);
+    }
+
+
+
+//one argument
+static int mymethod(int a)
+    {
+        return 5 + a;
+    }
+    static void Main(String[] args)
+    {
+        Console.WriteLine(mymethod(4));
+    }
+
+
+
+//named argument
+static void mymethod(string A, string B)
+    {
+        Console.WriteLine("name: " + A);
+    }
+    static void Main(String[] args)
+    {
+        mymethod(B:"bhavik",  A:"hardik");
+    }
+
+
+
+//method overloading
+static int plus(int a, int b)
+    {
+        return a + b;
+    }
+
+    static double plus(double a, double b)
+    {
+        return a + b;
+    }
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine(plus(4,5));
+        Console.WriteLine(plus(5.5,6.5));
+    }
