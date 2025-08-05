@@ -1,0 +1,27 @@
+//inheritance
+class animal
+{
+    public string name= "dog";
+
+    public void eat()
+    {
+        Console.WriteLine("grass");
+    }
+}
+
+class dog :animal
+{
+    public string sound = "dog dog";
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        dog d1 = new dog();
+        
+        Console.WriteLine(d1.name);
+        Console.WriteLine(d1.sound);
+        d1.eat();
+    }
+}
