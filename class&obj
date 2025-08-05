@@ -1,0 +1,85 @@
+//oop
+using System;
+
+namespace project1;
+
+ class car
+ {
+     string color = "red";
+     private string name = "bmw";
+
+     static void Main(string[] args)
+     {
+         car c1 = new car();
+         car c2 = new car();
+         
+         
+         Console.WriteLine(c1.color);
+         Console.WriteLine(c2.name);
+     }
+ }
+
+
+
+//multiple class
+class car
+ {
+     public string color = "red";
+     private string name = "bmw";
+ }
+
+ class car2
+ {
+     static void Main(string[] args)
+     {
+         car c1 = new car();
+         Console.WriteLine(c1.color);
+     }
+ }
+
+
+//method call
+ class car
+ {
+     string color = "red";
+     private string name = "bmw";
+
+     public void display()
+     {
+         Console.WriteLine(color + " " + name);
+     }
+
+     static void Main(string[] args)
+     {
+         car c = new car();
+         c.display();
+     }
+ }
+
+
+
+
+
+
+// static vs instance methods
+
+class car
+{
+    public static void display()
+    {
+        Console.WriteLine("static");
+    }
+
+    public void show()
+    {
+        Console.WriteLine("instance");
+    }
+
+    static void Main(string[] args)
+    {
+        car.display();      //static
+
+        car c1 = new car();
+        c1.show();          //instance
+    }
+}
