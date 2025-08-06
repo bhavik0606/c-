@@ -1,0 +1,16 @@
+using System;
+using System.IO;
+
+namespace Project1;
+
+class program
+{
+    static void Main(string[] args)
+    {
+        string wfile = "hello";
+        File.WriteAllText("temp.txt",wfile);
+
+        string rfile = File.ReadAllText("temp.txt");
+        Console.WriteLine(rfile);
+    }
+}
