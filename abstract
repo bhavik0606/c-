@@ -1,0 +1,33 @@
+using System;
+
+namespace project1;
+
+abstract class animal
+{
+    public abstract void sound();
+
+    public void sleep()
+    {
+        Console.WriteLine("zzz");
+    }
+}
+
+class cow : animal
+{
+    public override void sound()
+    {
+        Console.WriteLine("cow cow");
+    }
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        cow c1 = new cow();
+        
+        c1.sound();     //abstract method
+        c1.sleep();
+    }
+    
+}
