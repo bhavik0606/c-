@@ -1,0 +1,37 @@
+using System;
+
+namespace project1;
+interface Idog
+{
+    public void eat();
+}
+
+interface Icat
+{
+    public void drink();
+}
+
+class puppy : Idog,  Icat
+{
+    public void eat()
+    {
+        Console.WriteLine("puppy");
+    }
+
+    public void drink()
+    {
+        Console.WriteLine("milk");
+    }
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        puppy p1 = new puppy();
+        p1.eat();
+        p1.drink();
+        
+    }
+    
+}
