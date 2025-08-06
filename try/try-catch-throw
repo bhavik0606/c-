@@ -1,0 +1,39 @@
+class temp
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            int[] arr = { 1, 2, 3 };
+            Console.WriteLine(arr[6]);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            Console.WriteLine("by by");
+        }
+    }
+}
+
+
+
+
+    static void cheackAge(int age)
+    {
+        if (age < 18)
+        {
+            throw new ArithmeticException("Access denied");
+        }
+        else
+        {
+            Console.WriteLine("Accessed");
+        }
+    }
+    
+    static void Main(string[] args)
+    {   
+        cheackAge(15);
+    }
