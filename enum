@@ -1,0 +1,32 @@
+using System;
+using System.Xml;
+
+namespace project1;
+
+class program
+{
+    enum level
+    {
+        easy,
+        medium,
+        hard
+    }
+    
+    static void Main(string[] args)
+    {
+        level l1 = level.hard;
+
+        switch (l1)
+        {
+            case level.easy:
+                Console.WriteLine("level easy");
+                break;
+            case level.medium:
+                Console.WriteLine("level medium");
+                break;
+            case level.hard:
+                Console.WriteLine("level hard");
+                break;
+        }
+    }
+}
